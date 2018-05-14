@@ -22,6 +22,7 @@ ids = []
 for i in maps: # create a list of the map ids
     ids.append(''.join(re.findall("[0-9]*", i)))
 
+# CHANGE THIS DIRECTORY TO BE YOUR LOCAL SONGS FOLDER!!!
 current_songs = listdir("D:\Games\osu!\Songs") # list of already downloaded songs (hardcoded file path)
 for old_map in current_songs: # get rid of new beatmap ids that are already downloaded
     for new_map in ids: # look through new maps
@@ -35,3 +36,6 @@ for i in range(len(ids)):
 
 for i in links: # open all links (and automatically start downloading)
     webbrowser.open(i)
+
+if len(ids) == 0: # no new downloads
+    print ("No new beatmaps downloaded.")
