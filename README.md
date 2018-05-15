@@ -1,5 +1,7 @@
 # osu-beatmap-downloader
-For lazy people.
+[![osu! downloader](osu_downloader.png)](https://github.com/keyaa/osu-beatmap-downloader/archive/master.zip)
+
+Made for lazy people.
 
 How to use:
 1. Have Python 3 and BeautifulSoup installed: `pip install beautifulsoup4`
